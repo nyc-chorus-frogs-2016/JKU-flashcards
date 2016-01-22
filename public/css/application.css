@@ -1,0 +1,157 @@
+/*******************************
+         General
+********************************/
+
+body {
+  font-family: 'Raleward', sans-serif;
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+.wrapper-main {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+/*******************************
+         Colors
+********************************/
+
+
+body {
+  color: #3a3a3a;
+}
+
+
+header {
+  background: #6400FF;
+}
+
+
+footer {
+  background-color: #9419FF;
+}
+
+.logo h1 {
+  color: #fff;
+}
+
+
+a {
+  color: #0474ff;
+}
+
+nav a, nav a:visited {
+  color: #fff;
+}
+
+nav a.selected, nav a:hover {
+  color: #18CC48;
+}
+
+/*****************************
+        Header
+******************************/
+
+header {
+  float: left;
+  margin: 0 0 20px;
+  padding: 5px 0 0;
+  width: 100%;
+}
+
+.logo {
+  float: left;
+  text-align: center;
+  margin: 0;
+}
+
+.logo h1 {
+  margin: 20px 10px;
+  font-size: 2em;
+  font-weight: medium;
+  line-height: .75em;
+}
+
+
+
+
+/******************************
+        Navigation
+********************************/
+
+nav {
+  float: right;
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 700;
+  font-size: 1.05em;
+  padding: 15px 10px;
+}
+
+
+
+/*********************************
+        Footer
+*********************************/
+
+footer {
+  clear: both;
+  padding: 20px 0 30px;
+  width: 100%;
+}
+
+/*********************************
+    Flashcard Deck Main Page
+*********************************/
+
+
+
+
+/*********************************
+        User Profile Page
+*********************************/
+
+
+
+/*********************************
+    Flashcard Game Page
+*********************************/
+
+
+/*********************************
+    Completed Round Show Page
+*********************************/
+
+
+
+
+
+
+
+
+
+
+
+
