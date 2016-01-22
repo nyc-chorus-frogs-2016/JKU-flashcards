@@ -1,0 +1,23 @@
+Information in a program that is meant for other programmers (or anyone reading the source code) and has no effect on the execution of the program.
+comment
+
+To translate a program written in a high-level language into a low-level language all at once, in preparation for later execution.
+compile
+
+The process of finding and removing any of the three kinds of programming errors.
+debugging
+
+Another name for a runtime error.
+exception
+
+To examine a program and analyze the syntactic structure.
+parse
+
+A function used in a program or script that causes the Python interpreter to display a value on its output device
+print function
+
+The process of formulating a problem, finding a solution, and expressing the solution.
+problem solving
+
+A sequence of instructions that specifies to a computer actions and computations to be performed.
+program
