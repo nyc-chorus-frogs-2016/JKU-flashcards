@@ -44,3 +44,12 @@ mammals_cards = parse_cards_from_file('db/decks/mammals.txt')
 mammals_cards.each do |card_data|
   mammals_deck.flashcards << Flashcard.create(card_data)
 end
+
+kb = User.new(username:"KB", email:"kdiangelo@gmail.com", password:"12345")
+kb.save
+
+jenna = User.new(username:"Jenna", email:"jenna@gmail.com", password:"abc123")
+jenna.save
+
+un = User.new(username:"Un", email:"un@mail.com", password:"password")
+un.save
