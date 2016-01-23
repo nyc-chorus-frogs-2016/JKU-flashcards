@@ -17,8 +17,13 @@
     </a>
     <nav>
       <ul>
-        <li><a href="">register</a></li>
-        <li><a href="">login</a></li>
+        <%if !logged_in?%>
+        <li><a href="/users/new">register</a></li>
+        <li><a href="/login">login</a></li>
+        <%else%>
+        <li><a href="">welcome <%=current_user.username%></a><li>
+        <li><a href="/login">logout</a><li>
+        <%end%>
         <li><a href="">home</a></li>
       </ul>
     </nav>
