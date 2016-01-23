@@ -1,0 +1,23 @@
+get '/users/new' do
+  erb :"/users/new"
+end
+
+post '/users' do
+  if params[:users]["password1"] == params[:users]["password2"]
+    new_user = User.new(username: params[:users]["username"], email: params[:users]["email"], password: params[:users]["password1"])
+    if new_user.save
+      @success = true
+      erb :"/login"
+    else
+      redirect "/oops"
+    end
+  else
+    @error = "Your passwords don't match!"
+    erb :"/oops"
+  end
+end
+
+get "/users/:id" do
+  @user = User.find_by(id: params[:id])
+  erb :"users/show"
+end
