@@ -5,8 +5,16 @@ class Round < ActiveRecord::Base
 
   attr_accessor :shuffled_deck
 
-  def initialize
+
+  #Ideally this would happen on the creation of the AR object
+  #But we spent 10 minutes on Google and couldn't figure it out
+  #Soo.....
+  def create_shuffled_deck
     @shuffled_deck = self.deck.flashcards.to_a.shuffle
+  end
+
+  def shuffle_remaining_cards
+    @shuffled_deck.shuffle
   end
 
   def no_more_cards?
