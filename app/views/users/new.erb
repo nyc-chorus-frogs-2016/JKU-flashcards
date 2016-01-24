@@ -1,23 +1,26 @@
-<form action='/users' method='post'>
-  <ul>
-    <li>
-      <label for='users[username]'>Username:</label>
-      <input type='text' name='users[username]'/>
-    </li>
-    <li>
-      <label for='users[password1]'>Password</label>
-      <input type='password' name='users[password1]'/>
-    </li>
-    <li>
-      <label for='users[password2]'>Confirm Password:</label>
-      <input type='password' name='users[password2]'/>
-   </li>
-   <li>
-      <label for='users[email]'>Email</label>
-      <input type='text' name='users[email]'/>
-   </li>
-    <li>
-      <input type='submit' value='Create My Account' />
-    </li>
-  </ul>
-</form>
+<section class='create-form'>
+  <h2>Create an Account</h2>
+  <form action='/users' method='post'>
+    <ul>
+      <li>
+        <label for='users[username]'>Username:</label>
+        <input type='text' name='users[username]'/>
+      </li>
+      <li>
+        <label for='users[password1]'>Password:</label>
+        <input type='password' name='users[password1]'/>
+      </li>
+      <li>
+        <label for='users[password2]'>Confirm Password:</label>
+        <input type='password' name='users[password2]'/>
+     </li>
+     <li>
+        <label for='users[email]'>Email:</label>
+        <input type='text' name='users[email]'/>
+     </li>
+      <li>
+        <input type='submit' value='Create My Account' />
+      </li>
+    </ul>
+  </form>
+</section>

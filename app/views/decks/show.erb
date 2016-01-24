@@ -1,16 +1,18 @@
-<p>Test your knowledge of <%=@deck.name%>?</p>
+<section class='deck-game'>
+  <h2>Test your knowledge of <%=@deck.name%>?</h2>
 
    <form action='/rounds' method='post'>
-        <input type='hidden' name='round[deck_id]' value='<%=@deck.id%>' />
-        <input type='hidden' name='round[user_id]'
-        <%if logged_in? %>
-            </value='<%=current_user.id%>' />
-        <%else%>
-          />
-        <%end%>
-        <input type='submit' value='Yes'/>
+    <input type='hidden' name='round[deck_id]' value='<%=@deck.id%>' />
+    <input type='hidden' name='round[user_id]'
+    <%if logged_in? %>
+        </value='<%=current_user.id%>' />
+    <%else%>
+      />
+    <%end%>
+    <input type='submit' value='Yes'/>
    </form>
 
-<a href="/">No, take me back to the index</a>
+  <p><a href="/">No, take me back to the index</a></p>
+</section>
 
 

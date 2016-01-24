@@ -6,7 +6,7 @@ post '/sessions' do
     session[:user_id] = user.id
     redirect '/decks/index'
   else
-    @error = "incorrect username or password"
+    @error = "Incorrect username or password"
     erb :'/oops'
   end
 end
