@@ -3,9 +3,13 @@
 ********************************/
 
 body {
-  font-family: 'Raleward', sans-serif;
+  font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
   margin: 0 auto;
   font-weight: normal;
+  background-image: url("../imgs/background.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
 }
 
 .wrapper-main {
@@ -24,27 +28,20 @@ a {
          Colors
 ********************************/
 
-
 body {
-  color: #3a3a3a;
+  color: #017ca1;
 }
-
 
 header {
-  background: #6400FF;
-}
-
-footer {
-  background-color: #9419FF;
+  background: #10b9ec;
 }
 
 .logo h1 {
-  color: #fff;
+  color: #017ca1;
 }
 
-
 a {
-  color: #0474ff;
+  color: #0aa4d2;
 }
 
 nav a, nav a:visited {
@@ -52,8 +49,10 @@ nav a, nav a:visited {
 }
 
 nav a.selected, nav a:hover {
-  color: #18CC48;
+  color: #017ca1;
 }
+
+
 
 /*****************************
         Header
@@ -64,6 +63,7 @@ header {
   margin: 0 0 20px;
   padding: 5px 0 0;
   width: 100%;
+  height: 20%;
 }
 
 .logo {
@@ -73,10 +73,9 @@ header {
 }
 
 .logo h1 {
-  margin: 20px 10px;
-  font-size: 2em;
-  font-weight: medium;
-  line-height: .75em;
+  margin: 20px 20px 15px;
+  font-family: 'Bree Serif', Georgia, serif;;
+  font-size: 2.75em;
 }
 
 
@@ -105,8 +104,8 @@ nav li {
 
 nav a {
   font-weight: 700;
-  font-size: 1.05em;
-  padding: 15px 10px;
+  font-size: 1.1em;
+  padding: 10px;
 }
 
 
@@ -121,9 +120,87 @@ footer {
   width: 100%;
 }
 
+
+
 /*********************************
-    Flashcard Deck Main Page
+    Homepage Page
 *********************************/
+#homepage {
+  margin-left: 10%;
+
+}
+
+#homepage h2 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 0;
+  padding-top: 40px;
+}
+
+#homepage p, li {
+  font-size: 1.25em;
+  margin-bottom: 10px;
+}
+
+
+
+/*********************************
+      Registration Page
+*********************************/
+.create-form {
+  margin-left: 10%;
+}
+
+.create-form h2 {
+  font-size: 1.75em;
+  margin-top: 0;
+}
+
+.create-form ul {
+  list-style: none;
+  padding: 0;
+}
+
+.create-form li {
+  font-size: 1.25em;
+  margin-bottom: 30px;
+}
+
+
+
+/*********************************
+        Login Page
+*********************************/
+
+.login-form {
+  margin-left: 10%;
+}
+
+.login-form h2 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+.login-form ul {
+  list-style: none;
+  padding: 0;
+}
+
+.login-form li, p {
+  font-size: 1.25em;
+  margin-bottom: 30px;
+}
+
+
+
+/*********************************
+        Error Page
+*********************************/
+.error-page h2 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
 
 
 /*********************************
@@ -132,23 +209,48 @@ footer {
 
 
 
+
+/*********************************
+       Decks Index Page
+*********************************/
+
+.all-decks h2 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+
+
+/*********************************
+     Deck Game Begin Page
+*********************************/
+
+.deck-game h2 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+
+
+/*********************************
+     Next Card Page
+*********************************/
+
+.deck-game-next-card h2 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+
 /*********************************
     Flashcard Game Page
 *********************************/
 
 
+
 /*********************************
     Completed Round Show Page
 *********************************/
-
-
-
-
-
-
-
-
-
 
 
 

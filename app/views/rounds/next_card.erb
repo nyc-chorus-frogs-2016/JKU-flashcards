@@ -1,4 +1,6 @@
-<p>The round id is <%=@round.id%></p>
-<%current_card = @round.shuffled_deck[-1]%>
-<p>The question on this card is... <%=current_card.question%></p>
-<p>The answer on this card is... <%=current_card.answer%></p>
+<section class='deck-game-next-card'>
+  <h2>The round is <%=@round.id%></h2>
+  <%current_card = @round.shuffled_deck[-1]%>
+  <p>The question on this card is... <%=current_card.question%></p>
+  <p>The answer on this card is... <%=current_card.answer%></p>
+</section>

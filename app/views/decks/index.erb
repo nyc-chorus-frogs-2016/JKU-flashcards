@@ -1,6 +1,8 @@
-<h1>All Decks</h1>
-<ul>
-  <%@all_decks.each do |deck|%>
-    <li><a href="<%=deck.id%>"><%=deck.name%></a></li>
-  <%end%>
-</ul>
+<section class='all-decks'>
+  <h2>All Decks</h2>
+  <ul>
+    <%@all_decks.each do |deck|%>
+      <li><a href="<%=deck.id%>"><%=deck.name%></a></li>
+    <%end%>
+  </ul>
+</section>
