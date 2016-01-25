@@ -5,4 +5,6 @@ class Deck < ActiveRecord::Base
   has_many :flashcards
   has_many :users, through: :rounds
   has_many :guesses, through: :flashcards
+
+  belongs_to :creator, class_name: "User"
 end
