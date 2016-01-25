@@ -30,6 +30,13 @@ harry_potter_cards.each do |card_data|
   harry_potter_deck.flashcards << Flashcard.create(card_data)
 end
 
+jKU_deck = Deck.create(name:"JKU Fun Facts")
+jKU_cards = parse_cards_from_file('db/decks/contributers.txt')
+
+jKU_cards.each do |card_data|
+  jKU_deck.flashcards << Flashcard.create(card_data)
+end
+
 
 computer_science_deck = Deck.create(name: "Computer Science")
 computer_science_cards = parse_cards_from_file('db/decks/computer_science.txt')

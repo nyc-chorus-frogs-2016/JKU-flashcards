@@ -1,1 +1,14 @@
-<p>Nothing here yet</p>
+<section class='profile'>
+  <h2><%=@user.username%></h2>
+<% @user.decks.each do |deck| %>
+  <h3><%=deck.name%></h3>
+  <% deck.rounds.each do |round| %>
+  <ul>
+    <li>Date Played: <%=round.date_played%></li>
+    <li>Cards in Deck: <%=round.number_cards%></li>
+    <li>First Guess Correct: <%=round.first_try%></li>
+    <li>Total Guesses: <%=round.total_attempts%></li>
+  </ul>
+  <%end %>
+<% end %>
+</section>

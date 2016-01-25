@@ -206,7 +206,10 @@ footer {
 /*********************************
         User Profile Page
 *********************************/
-
+.profile h2 {
+  font-size: 2em;
+  margin-top: 0;
+}
 
 
 
@@ -251,6 +254,10 @@ footer {
 /*********************************
     Completed Round Show Page
 *********************************/
+.show-results h2 {
+  font-size: 2em;
+  margin-top: 0;
+}
 
 
 

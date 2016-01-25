@@ -1,0 +1,5 @@
+<section class='show-results'>
+  <h2><%=@round.deck.name%></h2>
+
+<p>You've completed a round of <%=@round.deck.name%>.  You answered <%=@round.first_try %>/<%=@round.deck.flashcards.count%> cards correctly on the first try. You submitted <%= @round.total_attempts%> total guesses before each card was answered successfully.</p>
+</section>
