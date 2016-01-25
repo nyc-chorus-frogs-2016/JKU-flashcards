@@ -1,6 +1,14 @@
+
 <section class='deck-game-next-card'>
-  <h2>The round is <%=@round.id%></h2>
-  <%current_card = @round.shuffled_deck[-1]%>
-  <p>The question on this card is... <%=current_card.question%></p>
-  <p>The answer on this card is... <%=current_card.answer%></p>
+  <h2><%=@round.deck.name%>!</h2>
+  <%current_card = @round.random_card%>
+  <h3>Question...</h3>
+  <p><%=current_card.question%></p>
+
+  <form action='/guesses' method='post'>
+    <input type ='hidden' name='guess[round_id]' value='<%=@round.id%>' />
+    <input type ='hidden' name='guess[flashcard_id]' value=<%=current_card.id%> />
+    <input type ='text' name='answer[answer]' />
+    <input type ='submit' value='submit your guess' />
+  </form>
 </section>

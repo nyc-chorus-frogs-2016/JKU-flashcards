@@ -1,33 +1,25 @@
 class Round < ActiveRecord::Base
   has_many :guesses
   belongs_to :deck
-  has_many :flashcards, through: :guesses
+  has_many :flashcards, through: :deck
+  belongs_to :user
 
-  attr_accessor :shuffled_deck
+  def random_card
 
+    # self.deck.flashcards.select {|card| card.guesses.where("correct = ?", !true)}.sample
+    self.flashcards.select {|card| card.completed != 1}.sample
 
-  #Ideally this would happen on the creation of the AR object
-  #But we spent 10 minutes on Google and couldn't figure it out
-  #Soo.....
-  def create_shuffled_deck
-    @shuffled_deck = self.deck.flashcards.to_a.shuffle
-  end
-
-  def shuffle_remaining_cards
-    @shuffled_deck.shuffle
-  end
-
-  def no_more_cards?
-    @shuffled_deck.empty?
   end
 
   def game_over?
-    users_guesses = self.guesses.map { |guess| !!guess.correct }
-    if users_guesses.include?(false)
-      return false
-    else
+
+   #THERE HAS GOT TO BE A BETTER WAY
+   if self.flashcards.select{|card| card.completed != 1} == []
       return true
-    end
+   end
+
+   false
+
   end
 
   def total_attempts
@@ -44,7 +36,7 @@ class Round < ActiveRecord::Base
   end
 
   def number_cards
-    self.deck.flashcards.to_a.count
+    self.flashcards.count
   end
 
   def date_played

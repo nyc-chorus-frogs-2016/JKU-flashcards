@@ -1,12 +1,14 @@
 class Guess < ActiveRecord::Base
-  validates :correct, :attempt_count, presence: true
 
   belongs_to :round
   belongs_to :flashcard
+  has_one :deck, through: :flashcard
 
   def check_guess(guessed_answer)
     if guessed_answer == self.flashcard.answer
-      self.correct = true;
+      return true
+    else
+      return false
     end
   end
 
