@@ -211,6 +211,15 @@ footer {
   margin-top: 0;
 }
 
+.profile ul {
+  display: inline-block;
+  max-width: 50%;
+  border:2px solid;
+  padding: 1em;
+  margin: 2em;
+  list-style-type: none;
+  border-radius: 25px;
+}
 
 
 /*********************************

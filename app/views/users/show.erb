@@ -1,6 +1,8 @@
 <section class='profile'>
   <h2><%=@user.username%></h2>
-<% @user.decks.each do |deck| %>
+  <p><a href="/decks/new">Create a New Deck</a> || <a href="/"</a>Back to the Index</a></p>
+  <p>Your stats...</p>
+<% @user.decks.distinct.each do |deck| %>
   <h3><%=deck.name%></h3>
   <% deck.rounds.each do |round| %>
   <ul>
