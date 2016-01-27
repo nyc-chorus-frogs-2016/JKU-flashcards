@@ -3,7 +3,7 @@
 post '/rounds' do
   new_round = Round.new(params[:round])
   if new_round.save
-
+    #ZM: So this... is where you get all jammed up!
     new_round.flashcards.each do |card|
       card.update_attributes(completed: false)
     end

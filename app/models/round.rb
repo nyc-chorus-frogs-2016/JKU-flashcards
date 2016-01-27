@@ -6,6 +6,9 @@ class Round < ActiveRecord::Base
 
   def random_card
 
+    #ans_ids = round.guesses.where(correct: 1).pluck(:flashcard_id)
+    #round.flashcards.reject{|card| ans_ids.include?( card.id) }
+
     # self.deck.flashcards.select {|card| card.guesses.where("correct = ?", !true)}.sample
     self.flashcards.select {|card| card.completed != 1}.sample
 
@@ -14,6 +17,7 @@ class Round < ActiveRecord::Base
   def game_over?
 
    #THERE HAS GOT TO BE A BETTER WAY
+   #ZM; There is an any? and all? enumerable method that will do this.
    if self.flashcards.select{|card| card.completed != 1} == []
       return true
    end
